@@ -1,0 +1,10 @@
+<?php
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPlugin(
+    [
+        'LLL:EXT:staff/Resources/Private/Language/locallang_db.xlf:tx_staff_domain_model_member',
+        'staff_member',
+        'staff'
+    ],
+    'CType',
+    'staff'
+);

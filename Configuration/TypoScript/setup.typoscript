@@ -1,0 +1,10 @@
+plugin.tx_staff {
+  view {
+    templateRootPaths.0 = EXT:staff/Resources/Private/Templates/
+    partialRootPaths.0 = EXT:staff/Resources/Private/Partials/
+    layoutRootPaths.0 = EXT:staff/Resources/Private/Layouts/
+  }
+  persistence {
+    storagePid = {$plugin.tx_staff.persistence.storagePid}
+  }
+}

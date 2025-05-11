@@ -1,0 +1,10 @@
+<f:layout name="Default" />
+<f:section name="main">
+  <f:for each="{members}" as="member">
+    <f:link.action action="show" arguments="{member: member}">
+      <img src="{f:uri.image(image: member.image)}" alt="{member.firstName} {member.lastName}" />
+      <h3>{member.firstName} {member.lastName}</h3>
+      <p>{member.title} - {member.position}</p>
+    </f:link.action>
+  </f:for>
+</f:section>
