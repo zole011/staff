@@ -80,16 +80,14 @@ return [
         ],
         'image' => [
             'label' => 'Image',
-            'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
-                'image',
-                [
-                    'appearance' => [
-                        'createNewRelationLinkTitle' => 'Add Image',
-                    ],
-                    'maxitems' => 1,
+            'config' => [
+                'type' => 'file',
+                'appearance' => [
+                    'createNewRelationLinkTitle' => 'Add Image',
                 ],
-                $allowedFileExtensions = 'jpg,jpeg,png,svg'
-            ),
+                'maxitems' => 1,
+                'allowed' => 'jpg,jpeg,png,svg',
+            ],
         ],
         'slug' => [
             'label' => 'Slug',
